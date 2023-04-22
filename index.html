@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyshow</title>
+    <style>
+        .heading{
+            background-color: black;
+            width: 45%;
+            height: 50px;
+            margin: auto;
+        }
+        .bookmyshow{
+            color: beige;
+            display: block;
+            display: flex;
+            /* justify-content: left;
+            padding: 30px; */
+            padding-top: 15px;
+            padding-left: 5px;
+        }
+        .my{
+            background-color: white;
+            color: black;
+           /* border-radius: 5px; */
+           border-top-left-radius: 5px;
+           border-bottom-right-radius: 5px;
+        }
+        .select{
+            width: 250px;
+            height: 25px;
+        }
+        .qty{
+            width: 80px;
+            height: 25px;
+        }
+        .ibody{
+            background-color:black;
+            width: 45%;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+        .seat{
+            background-color: azure;
+            height: 12px;
+            width: 15px;
+            margin: 3px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            cursor: pointer;
+        }
+        .seat:hover{
+            transform: scale(1.2);
+        }
+        .row{
+            display: flex;
+        }
+        .seat:nth-of-type(3){
+            margin-right: 18px;
+        }
+        .seat:nth-last-of-type(3){
+            margin-left: 18px;
+        }
+        .choics{
+            display: flex;
+            margin: auto;
+            width: 550px;
+            height: 25px;
+            padding: auto;
+            /* background-color: burlywood; */
+            margin-left: 370px;
+        }
+        .screen{
+            width: 100%;
+            height: 70px;
+            background-color: white;
+            margin: 15px 0;
+            transform: rotateX(-45deg);
+            box-shadow: 0 3px 10px rgba(225,255,255,0.75);
+            
+        }
+        .information{
+            margin-top: 40px;
+            margin-left: 650px;
+            background-color: blue;
+            width: 160px;
+            height: 150px;
+        }
+        .info{
+            width: 60px;
+            height: 10px;
+            background-color: aliceblue;
+            display: flex;
+        }
+        .sdm1{
+            width: 20px;
+            height: 15px;
+            background-color: aliceblue;
+        }
+        .showcase{
+            /* display: flex;
+            justify-content: end;
+            justify-content: space-betweens; */
+            position: absolute;
+            top: 250px;
+            left: 880px;
+        }
+        /* .showcase li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } */
+        .seat.selected{
+            background-color: aqua;
+        }
+        #count{
+            color: chartreuse;
+            font-size: 20px;
+        }
+        #total{
+            color: chartreuse;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <span class="bookmyshow">book<span class="my">my</span>show</span>
+    </div><br>
+    
+    <div class="choics">
+        <span>
+            <select name="" id="" class="select">
+                <option value="Select class" id="slk">Select Class</option>
+            <option value="Silver class">Silver class</option>
+            <option value="Gold class">Gold class</option>
+            <option value="Platinum class">Platinum class</option>
+            <option value="Diamond class">Diamond class</option>
+            </select>
+            <select name="" id="" class="qty">
+                <option value="Qty">Qty</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+           </span>
+    </div>
+    <br>
+   <div class="ibody">
+    <div class="container">
+        <div class="screen"></div>
+        <ul class="showcase">
+            <li>
+             <div class="seat"></div>
+             <small>N/A</small>
+            </li>
+            <li>
+             <div class="seat selected"></div>
+             <small>selected</small>
+            </li>
+            <li>
+             <div class="seat"></div>
+             <small>Occupied</small>
+            </li>
+         </ul>
+        <br>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+       </div>
+       <p class="text">
+        <span id="count"> 0</span> Selected and cost of $ <span id="total"> 0</span>
+       </p>
+   </div>
+   <script src="./index.js"></script>
+</body>
+</html>
